@@ -7,7 +7,8 @@ import numpy as np
 st.title("ECG Visualization Dashboard")
 
 # Load dataset
-df = pd.read_csv("data/mitbih_train.csv")
+url = "https://raw.githubusercontent.com/anikannal/mit-bih-arrhythmia-database/master/mitbih_train.csv"
+df = pd.read_csv(url)
 
 # Select row
 row = st.slider("Select ECG sample", 0, len(df)-1, 0)
