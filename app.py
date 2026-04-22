@@ -7,7 +7,7 @@ import numpy as np
 st.title("ECG Visualization Dashboard")
 
 # Load dataset
-url = "https://raw.githubusercontent.com/anikannal/mit-bih-arrhythmia-database/master/mitbih_train.csv"
+url = "https://raw.githubusercontent.com/anikannal/mitbih-dataset/master/mitbih_train.csv"
 df = pd.read_csv(url)
 
 # Select row
